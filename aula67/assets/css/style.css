@@ -130,7 +130,7 @@ form button {
 
 .alert-sucess{
   position: absolute;
-  background: #93ce8b;
+  background: #bdebb7;
   color: #000000;
   top: 2px; /* Ajuste a posição de acordo com a sua necessidade */
   left: 50%; /* Posiciona o alerta no centro horizontalmente */
