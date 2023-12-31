@@ -21,7 +21,7 @@ body {
 }
 
 .container {
-  
+  position: relative;
   max-width: 640px;
   margin: 200px auto;
   background: #fff;
@@ -34,6 +34,7 @@ body {
   color: #333; /* Cor do texto */
   /* font-size: 24px;  */
 }
+
 
 .container p ::placeholder{
   
@@ -48,17 +49,26 @@ body {
  border-color: #d3c9c9;
 }
 
-.btn-tarefa{
+/* .btn-tarefa, .btn-delete{
   border-radius: 6px;
+} */
+
+.btn-tarefa{
+  background: #66a6db;
+  border-color: transparent;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  padding: 0.5rem;
+  width: 5rem;
 }
 .apagar{
   background: transparent;
   border-color: transparent;
   border-radius: 6px;
-  cursor: pointer;
   font-size: 1rem;
   margin: 0 0.8rem;
   color: #f5545496;
+  cursor: pointer;
 }
 
 
@@ -87,6 +97,48 @@ form button {
   height: 50px;
   cursor: pointer;
   margin-top: 30px;
+}
+
+.btn-delete{
+  align-items: center;
+  display: grid;
+  cursor: pointer;
+  text-transform: capitalize;
+  width: 10rem;
+  height: 1.5rem;
+  margin: 10px auto;
+  border: transparent;
+  background: transparent;
+  color: #e23939af;
+  font-size: 1.2rem;
+}
+
+.alert, .alert-sucess{
+  display: flex;
+  height: 1.25rem;
+  justify-content: center;/* colocar o texto no centro */
+  align-items: center;
+  text-align: center;
+  font-size: 0.9rem;
+  border-radius: 0.8rem;
+  color: #721c24;
+  background: #f8d7da;
+  padding: 1rem;  
+  letter-spacing: 0.20rem;
+  text-transform: capitalize;
+}
+
+.alert-sucess{
+  position: absolute;
+  background: #93ce8b;
+  color: #000000;
+  top: 2px; /* Ajuste a posição de acordo com a sua necessidade */
+  left: 50%; /* Posiciona o alerta no centro horizontalmente */
+  transform: translateX(-50%);
+  align-items: center;
+  text-align: center;
+  width: 90%; /* Define a largura do elemento como 90% do contêiner pai */
+  margin: 0 auto; /* Centraliza o elemento horizontalmente */
 }
 
 form button:hover {
