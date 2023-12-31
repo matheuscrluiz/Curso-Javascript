@@ -13,9 +13,9 @@ btnTarefa.addEventListener('click', function() {
 function criaBotaoApagar(li){
   li.innerText += '  '
   const botaoApagar = document.createElement('button');
-  botaoApagar.innerText = 'Apagar'
+  botaoApagar.innerHTML = '<i class="fas fa-trash"></i>';
   botaoApagar.setAttribute('class', 'apagar');
-  botaoApagar.setAttribute('title', 'Apgar tarefa'); //tooltip
+  botaoApagar.setAttribute('title', 'Apagar tarefa'); //tooltip
 
   li.appendChild(botaoApagar);
 };
