@@ -101,7 +101,27 @@ function criaLi(){
 // para quando apertar o enter no teclado 
 inputTarefa.addEventListener('keypress', function(e){
   if(e.keyCode === 13){
-     if(!inputTarefa.value) return;
+    if(!inputTarefa.value){
+    
+      alert.textContent = 'Insira uma tarefa para adicionar';
+      alert.classList.add('alert')
+  
+      setTimeout(function() {
+        alert.textContent = '';
+        alert.classList.remove('alert');
+      }, 2000);
+      return
+    }
+    else{
+      alertSucess.textContent = 'Tarefa inserida com sucesso';
+      alertSucess.classList.add('alert-sucess')
+  
+      setTimeout(function() {
+        alertSucess.textContent = '';
+        alertSucess.classList.remove('alert-sucess');
+      }, 2000);
+  
+    }
      criaTarefa(inputTarefa.value);
   }
 });;
